@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Pasta Party - Outil Gestion de commandes</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <p>LOGO</p>
+      </div>
+      <div id="titre">
+        <h1>PASTA PARTY - APPLICATION DE GESTION DE COMMANDES</h1>
+      </div>
+    </header>
+
+    <section id="page">
+      <nav>
+        <ul id="navContainer">
+          <li><a href="#">ACCUEIL</a></li>
+          <li><a href="#">NOUVELLE COMMANDE</a></li>
+          <li><a href="#">TOUTES LES COMMANDES</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="ajout">
+          <h2>NOUVELLE COMMANDE</h2>
+
+          <div id="nvCommande">
+            <!-- 
+        quand je clique sur le produit,
+        > acces aux varietes
+        click sur variete = ajout a la liste
+             -->
+            <div id="produits">
+              <div id="americain"><img src="./assets/images/produits/americain.png" alt="" /></div>
+              <div id="pates"><img src="./assets/images/produits/pates.png" alt="" /></div>
+              <div id="panini"><img src="./assets/images/produits/paninis.png" alt="" /></div>
+              <div id="petiteFaim"><img src="./assets/images/produits/petitefaim.png" alt="" /></div>
+              <div id="desserts"><img src="./assets/images/produits/desserts.png" alt="" /></div>
+              <div id="boissons"><img src="./assets/images/produits/boissons.png" alt="" /></div>
+            </div>
+            <!--
+        au fur et a mesure que j'ajoute les produits, 
+        ils s'inserent dans une liste 
+        + un total
+            -->
+            <div id="listeCommande">
+              <ul></ul>
+              <h3>Total = <span id="total">0</span>€</h3>
+            </div>
+          </div>
+
+        </section>
+      </main>
+    </section>
+
+    <footer>Gaetan F (C) 2022</footer>
+
+    <script src="./assets/js/jquery-3.6.0.slim.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+  </body>
+</html>
